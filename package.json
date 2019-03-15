@@ -11,6 +11,10 @@
     "start:dev": "nodemon --exec babel-node ./bin/www.js",
     "test": "sequelize db:migrate:undo:all --env=test&&sequelize db:migrate --env=test  && cross-env NODE_ENV=test nyc mocha --exit server/tests/test.js"
   },
+  "engines": {
+    "node": "10.15.0",
+    "npm": "6.4.1"
+  },
   "keywords": [],
   "author": "Gbenga Ode",
   "license": "ISC",
