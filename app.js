@@ -30,7 +30,7 @@ app.use((req, res, next) => {
   res.header('Access-Control-Allow-Credentials', 'true');
   next();
 });
-app.use(express.static(__dirname + '/build/'));
+// app.use(express.static(__dirname + '/build/'));
 
 // Require our routes into the application.
 app.use(contractRoute);
